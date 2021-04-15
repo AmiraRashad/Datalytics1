@@ -8,6 +8,7 @@ import {
   FormControl,
   Toolbar,
   Typography,
+  withTheme,
 } from "@material-ui/core";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Nav, Navbar } from "react-bootstrap";
@@ -16,6 +17,14 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "black",
     color: "white",
   },
+  btn: {
+    backgroundColor: "white",
+    "&:hover": {
+      background: "grey",
+      color: "white",
+    },
+  },
+  hover: {},
 }));
 const TopBar = () => {
   const classes = useStyles();
@@ -32,7 +41,7 @@ const TopBar = () => {
       </Nav>
       <Form inline>
         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        <Button variant="outline-info" className={classes.Name}>
+        <Button variant="outline-info" className={classes.btn}>
           Search
         </Button>
       </Form>
