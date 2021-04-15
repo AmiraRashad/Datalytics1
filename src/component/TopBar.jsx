@@ -24,7 +24,9 @@ const useStyles = makeStyles((theme) => ({
       color: "white",
     },
   },
-  hover: {},
+  navLinks: {
+    marginRight: "auto",
+  },
 }));
 const TopBar = () => {
   const classes = useStyles();
@@ -33,7 +35,7 @@ const TopBar = () => {
       <Navbar.Brand href="/">
         <em>Datalytics</em>
       </Navbar.Brand>
-      <Nav className="mr-auto">
+      <Nav className={classes.navLinks}>
         <Nav.Link href="/">Home</Nav.Link>
         <Nav.Link href="/">Districts</Nav.Link>
         <Nav.Link href="/">Schools</Nav.Link>
