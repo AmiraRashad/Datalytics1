@@ -14,14 +14,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Nav, Navbar } from "react-bootstrap";
 const useStyles = makeStyles((theme) => ({
   Name: {
-    backgroundColor: "black",
-    color: "white",
+    backgroundColor: "#0A548C",
+    color: "#F39C12 ",
   },
   btn: {
-    backgroundColor: "white",
+    backgroundColor: "#F39C12 ",
     "&:hover": {
-      background: "grey",
-      color: "white",
+      background: "white",
+      color: "#F39C12 ",
     },
   },
   navLinks: {
